@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Login page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../style/create_ad_style.css" />
+  <link rel="stylesheet" type="text/css" href="../style/styleshet.css" />
+  <title>Створення нового оголошення</title>
+</head>
+<body>
+<div>
+  <header class="header">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Оголошення</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Оголошення</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Вийти</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<br>
+<div>
+  <form>
+    <label>
+      Виберіть тип оголошення:
+      <input type="radio" name="type" value="public" checked> Публічне
+      <input type="radio" name="type" value="local"> Локальне
+    </label>
+
+    <label>
+      Назва оголошення:
+      <input type="text" name="title" required>
+    </label>
+
+    <label>
+      Опис оголошення:
+      <textarea name="description" rows="5" required></textarea>
+    </label>
+
+    <label>
+      Категорія:
+      <select name="category" required>
+        <option value="">Виберіть категорію</option>
+        <option value="books">Книги</option>
+        <option value="electronics">Електроніка</option>
+        <option value="furniture">Меблі</option>
+        <option value="vehicles">Транспорт</option>
+      </select>
+    </label>
+
+    <label>
+      Фото:
+      <input type="file" name="photo" required>
+    </label>
+
+    <button type="submit">Створити оголошення</button>
+  </form>
+</div>
+</body>
+</html>

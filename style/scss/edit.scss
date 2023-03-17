@@ -1,0 +1,74 @@
+$body-font-family: Arial, sans-serif;
+$container-max-width: 800px;
+$container-padding: 20px;
+$label-font-size: 18px;
+$input-font-size: 16px;
+$input-padding: 8px;
+$input-border-color: #ccc;
+$input-border-radius: 4px;
+$static-field-font-size: 18px;
+$static-field-font-weight: bold;
+$delete-btn-bg-color: red;
+$delete-btn-color: white;
+$delete-btn-padding: 10px 20px;
+$delete-btn-border-radius: 4px;
+$delete-btn-margin-top: 20px;
+$delete-btn-cursor: pointer;
+$delete-btn-hover-bg-color: darkred;
+
+body {
+  font-family: $body-font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+label {
+  font-size: $label-font-size;
+  margin-bottom: 5px;
+}
+
+input {
+  font-size: $input-font-size;
+  padding: $input-padding;
+  margin-bottom: 20px;
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+}
+
+.static-field {
+  font-size: $static-field-font-size;
+  font-weight: $static-field-font-weight;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: $delete-btn-bg-color;
+  color: $delete-btn-color;
+  padding: $delete-btn-padding;
+  border: none;
+  border-radius: $delete-btn-border-radius;
+  margin-top: $delete-btn-margin-top;
+  cursor: $delete-btn-cursor;
+
+  &:hover {
+    background-color: $delete-btn-hover-bg-color;
+  }
+}

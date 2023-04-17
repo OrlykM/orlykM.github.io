@@ -5,43 +5,38 @@
     <title>Registration Page</title>
     <link rel="stylesheet" href="../style/login_style.css">
     <link rel="stylesheet" href="../style/styleshet.css">
+
 </head>
 <body>
 <div>
     <header class="header">
         <nav class="navbar">
-            <a class="navbar-brand" href="../index.html">Advertisment</a>
+            <a class="navbar-brand" href="#">Оголошення</a>
         </nav>
     </header>
 </div>
 
 <div class="container">
     <h2>Create an Account</h2>
-    <form>
+    <form id="form">
         <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
-
+        <input type="text" id="name" name="firstName" required>
         <label for="surname">Surname*</label>
-        <input type="text" id="surname" name="surname" required>
-
+        <input type="text" id="surname" name="lastName" required>
         <label for="email">Email*</label>
         <input type="email" id="email" name="email" required>
-
         <label for="password">Password*</label>
         <input type="password" id="password" name="password" required>
-
         <label for="password-confirmation">Confirm Password*</label>
         <input type="password" id="password-confirmation" name="password-confirmation" required>
-
         <label for="phone">Phone Number*</label>
         <input type="tel" id="phone" name="phone" required>
-
         <label for="city">City*</label>
-        <input type="text" id="city" name="city" required>
-
+        <input type="number" id="city" name="idlocation" required>
         <input type="submit" value="Create Account">
     </form>
-    <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    <p>Already have an account? <a href="#">Log in here</a>.</p>
+    <script src="../scripts/register_script.js"></script>
 </div>
 
 <footer>

@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../style/create_ad_style.css" />
   <link rel="stylesheet" type="text/css" href="../style/styleshet.css" />
-  <title>Post new ad</title>
+  <script src="../scripts/create_new_ad.js"></script>
+  <title>Create Ad</title>
 </head>
 <body>
 <div>
   <header class="header">
     <nav class="navbar">
-      <a class="navbar-brand" href="../index.html">Advertisement</a>
+      <a class="navbar-brand" href="#">Advertisement</a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="ads_main.html">All advertisement</a>
+          <a class="nav-link" href="#">See all ad</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Logout</a>
+          <a class="nav-link" href="#">Log out</a>
         </li>
       </ul>
     </nav>
@@ -28,38 +29,34 @@
 <div>
   <form>
     <label>
-      Choose type of advertisment
+      Сhoose type of advertisement:
       <input type="radio" name="type" value="public" checked> Public
       <input type="radio" name="type" value="local"> Local
     </label>
 
     <label>
-      Advertisement title:
+       Advertisement title:
       <input type="text" name="title" required>
     </label>
 
     <label>
-      Advertisement description:
+      Description:
       <textarea name="description" rows="5" required></textarea>
     </label>
 
     <label>
       Category:
       <select name="category" required>
-        <option value="">Choose category</option>
-        <option value="books">Books</option>
-        <option value="electronics">Electronics</option>
-        <option value="furniture">Furnitures</option>
-        <option value="vehicles">Vehicles</option>
+        <option value="1">Choose category</option>
       </select>
     </label>
 
     <label>
       Photo:
-      <input type="file" name="photo" required>
+      <input type="file" name="photo">
     </label>
 
-    <button type="submit">Post new ad</button>
+    <button type="submit" onclick="submit()">Create new advertisement</button>
   </form>
 </div>
 </body>
